@@ -217,43 +217,6 @@ export const makeNewsletterSocket = (config: SocketConfig) => {
 			})
 		},
 
-		/**
-		 * Part #3 projects @wasockets
-		 * Don't copy paste this code!
-		 */
-
-		newsletterDemoteAll: async (jid: string) => {
-			const result = await newsletterWMexQuery(jid, '9800646650009898', {
-				input: {
-					newsletter_id: jid,
-					count: 1000
-				}
-			})
-
-			const raw = getBinaryNodeChild(result, 'result')?.content?.toString()
-
-			if (!raw) throw new Error('Failed to get viewers data')
-
-			const edges = JSON.parse(raw).data.xwa2_newsletter_subscribers?.subscribers?.edges || []
-
-			const admins = edges.map((e: any) => e.node).filter((v: any) => v.role === 'ADMIN')
-
-			const results: string[] = []
-
-			for (const admin of admins) {
-				try {
-					await newsletterWMexQuery(jid, QueryIds.DEMOTE, {
-						user_id: admin.user_id
-					})
-					results.push(admin.user_id)
-				} catch (err) {
-					throw new TypeError(`Failed to demote ${admin.user_id}: ${err}`)
-				}
-			}
-
-			return results
-		},
-
 		newsletterDelete: async (jid: string) => {
 			await newsletterWMexQuery(jid, QueryIds.DELETE)
 		},
