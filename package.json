@@ -6,9 +6,9 @@
     "whatsapp",
     "automation"
   ],
-  "homepage": "https://github.com/WhiskeySockets/Baileys/",
+  "homepage": "https://github.com/wasockets/v1",
   "repository": {
-    "url": "git@github.com:WhiskeySockets/Baileys.git"
+    "url": "git@github.com:wasockets/v1.git"
   },
   "license": "MIT",
   "author": "WaSockets",
