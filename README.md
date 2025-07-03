@@ -1,4 +1,4 @@
-<h1 align='center'><img alt="@wasockets/v1 logo" src="https://i.pinimg.com/736x/68/46/0f/68460fc2a7b5daa6c55adf57d3d611fe.jpg" height="120"/></h1>
+<h1 align='center'><img alt="@wasockets/v1 logo" src="https://i.pinimg.com/736x/4f/ad/bd/4fadbd6bfb488a7994946f311d158963.jpg" height="120"/></h1>
 
 <div align='center'>
 
