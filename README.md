@@ -1,4 +1,4 @@
-<h1 align='center'><img alt="@wasockets/v1 logo" src="https://raw.githubusercontent.com/code-programmingg/@wasockets/v1/refs/heads/master/Media/logo.png" height="75"/></h1>
+<h1 align='center'><img alt="@wasockets/v1 logo" src="https://i.pinimg.com/736x/9e/b0/2d/9eb02d2a0580e01bfe40c01554818963.jpg" height="75"/></h1>
 
 <div align='center'>
 
